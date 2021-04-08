@@ -31,6 +31,15 @@ requires
   rtl;
 
 contains
+  dom in '..\..\src\compatibility\delphi-only\dom.pas',
+  rttiutils in '..\..\src\compatibility\delphi-only\rttiutils.pas',
+  uriparser in '..\..\src\compatibility\delphi-only\uriparser.pas',
+  castleuriutils in '..\..\src\files\castleuriutils.pas',
+  castledatauri in '..\..\src\files\castledatauri.pas',
+  castlefilesutils in '..\..\src\files\castlefilesutils.pas',
+  castlefindfiles in '..\..\src\files\castlefindfiles.pas',
+  castlexmlutils in '..\..\src\files\castlexmlutils.pas',
+  castledownload in '..\..\src\files\castledownload.pas',
   castleapplicationproperties in '..\..\src\base\castleapplicationproperties.pas',
   castleclassutils in '..\..\src\base\castleclassutils.pas',
   castlecolors in '..\..\src\base\castlecolors.pas',

@@ -67,3 +67,4 @@ initialization
 finalization
   FreeAndNil(FRegisteredProtocols);
 end.
+
