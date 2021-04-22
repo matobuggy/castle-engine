@@ -122,7 +122,7 @@ function Download(const Url: string; const Options: TStreamOptions;
 
 function GetEnableNetwork: Boolean; deprecated 'use EnableBlockingDownloads';
 procedure SetEnableNetwork(const Value: Boolean); deprecated 'use EnableBlockingDownloads';
-property EnableNetwork: Boolean read GetEnableNetwork write SetEnableNetwork;
+//property EnableNetwork: Boolean read GetEnableNetwork write SetEnableNetwork;
 
 {$endif}
 

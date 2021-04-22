@@ -184,19 +184,19 @@ begin
     FRegisteredProtocols.Add('http', nil, nil, TFpHttpClientReader);
     FRegisteredProtocols.Add('https', nil, nil, TFpHttpClientReader);
     {$endif}
-    FRegisteredProtocols.Add('', @TUrlFile(nil).Read, @TUrlFile(nil).Write, nil);
-    FRegisteredProtocols.Add('file', @TUrlFile(nil).Read, @TUrlFile(nil).Write, nil);
+    FRegisteredProtocols.Add('', TUrlFile(nil).Read, TUrlFile(nil).Write, nil);
+    FRegisteredProtocols.Add('file', TUrlFile(nil).Read, TUrlFile(nil).Write, nil);
     {$if defined(ANDROID)}
     FRegisteredProtocols.Add('assets', @TUrlCastleAndroidAssets(nil).Read, nil, nil);
     FRegisteredProtocols.Add('castle-android-assets', @TUrlCastleAndroidAssets(nil).Read, nil, nil);
     {$endif}
     FRegisteredProtocols.Add('castle-data', nil, nil, nil);
-    FRegisteredProtocols.Add('data', @TUrlData(nil).Read, nil, nil);
-    FRegisteredProtocols.Add('ecmascript', @TUrlEcmaScript(nil).Read, nil, nil);
-    FRegisteredProtocols.Add('javascript', @TUrlEcmaScript(nil).Read, nil, nil);
-    FRegisteredProtocols.Add('castlescript', @TUrlCastleScript(nil).Read, nil, nil);
-    FRegisteredProtocols.Add('kambiscript', @TUrlCastleScript(nil).Read, nil, nil);
-    FRegisteredProtocols.Add('compiled', @TUrlCompiled(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('data', TUrlData(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('ecmascript', TUrlEcmaScript(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('javascript', TUrlEcmaScript(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('castlescript', TUrlCastleScript(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('kambiscript', TUrlCastleScript(nil).Read, nil, nil);
+    FRegisteredProtocols.Add('compiled', TUrlCompiled(nil).Read, nil, nil);
   end;
   Result := FRegisteredProtocols;
 end;

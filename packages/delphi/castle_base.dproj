@@ -82,6 +82,8 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="rtl.dcp"/>
+        <DCCReference Include="xmlrtl.dcp"/>
+        <DCCReference Include="..\..\src\files\castleinternaldirectoryinformation.pas"/>
         <DCCReference Include="..\..\src\compatibility\delphi-only\dom.pas"/>
         <DCCReference Include="..\..\src\compatibility\delphi-only\rttiutils.pas"/>
         <DCCReference Include="..\..\src\compatibility\delphi-only\uriparser.pas"/>
@@ -102,13 +104,14 @@
         <DCCReference Include="..\..\src\base\castleprogressconsole.pas"/>
         <DCCReference Include="..\..\src\base\castleprojection.pas"/>
         <DCCReference Include="..\..\src\base\castlerectangles.pas"/>
-        <DCCReference Include="..\..\src\base\castleshaders.pas"/>
         <DCCReference Include="..\..\src\base\castlestringutils.pas"/>
         <DCCReference Include="..\..\src\base\castletimeutils.pas"/>
         <DCCReference Include="..\..\src\base\castleutils.pas"/>
         <DCCReference Include="..\..\src\base\castlevectors.pas"/>
         <DCCReference Include="..\..\src\base\castlevectorsinternaldouble.pas"/>
         <DCCReference Include="..\..\src\base\castlevectorsinternalsingle.pas"/>
+        <DCCReference Include="..\..\src\compatibility\delphi-only\xmlread.pas"/>
+        <DCCReference Include="..\..\src\compatibility\delphi-only\xmlwrite.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -135,7 +138,6 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Platforms>
-                <Platform value="Linux64">False</Platform>
                 <Platform value="Win32">True</Platform>
             </Platforms>
             <Deployment Version="3">

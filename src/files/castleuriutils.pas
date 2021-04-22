@@ -1041,8 +1041,8 @@ begin
   { Use below ResolveCastleDataURL, to get real location of data,
     e.g. resolved to file:// on normal desktop. }
   DataPath := ResolveCastleDataURL('castle-data:/');
-  if IsPrefix(DataPath, URL, not FileNameCaseSensitive) then
-    Result := 'castle-data:/' + PrefixRemove(DataPath, URL, not FileNameCaseSensitive)
+  if IsPrefix(DataPath, URL, false) then
+    Result := 'castle-data:/' + PrefixRemove(DataPath, URL, false)
   else
     Result := URL;
 end;

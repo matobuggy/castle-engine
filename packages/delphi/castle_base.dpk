@@ -28,9 +28,11 @@ package castle_base;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  xmlrtl;
 
 contains
+  castleinternaldirectoryinformation in '..\..\src\files\castleinternaldirectoryinformation.pas',
   dom in '..\..\src\compatibility\delphi-only\dom.pas',
   rttiutils in '..\..\src\compatibility\delphi-only\rttiutils.pas',
   uriparser in '..\..\src\compatibility\delphi-only\uriparser.pas',
@@ -51,12 +53,13 @@ contains
   castleprogressconsole in '..\..\src\base\castleprogressconsole.pas',
   castleprojection in '..\..\src\base\castleprojection.pas',
   castlerectangles in '..\..\src\base\castlerectangles.pas',
-  castleshaders in '..\..\src\base\castleshaders.pas',
   castlestringutils in '..\..\src\base\castlestringutils.pas',
   castletimeutils in '..\..\src\base\castletimeutils.pas',
   castleutils in '..\..\src\base\castleutils.pas',
   castlevectors in '..\..\src\base\castlevectors.pas',
   castlevectorsinternaldouble in '..\..\src\base\castlevectorsinternaldouble.pas',
-  castlevectorsinternalsingle in '..\..\src\base\castlevectorsinternalsingle.pas';
+  castlevectorsinternalsingle in '..\..\src\base\castlevectorsinternalsingle.pas',
+  xmlread in '..\..\src\compatibility\delphi-only\xmlread.pas',
+  xmlwrite in '..\..\src\compatibility\delphi-only\xmlwrite.pas';
 
 end.
